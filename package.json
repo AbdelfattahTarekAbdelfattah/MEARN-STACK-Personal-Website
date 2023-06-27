@@ -1,0 +1,17 @@
+{
+  "name": "perfect-personal-web",
+  "version": "1.0.0",
+  "description": "mt-personal-website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "web": "nodemon --ext js,ejs --ignore public"
+  },
+  "author": "Abdelfattah Tarek",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  }
+}

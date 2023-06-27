@@ -1,0 +1,250 @@
+:root {
+  --primaryColor: #7B68EE;
+  --background: #171717;
+  --darkColor: #222;
+  --witeColor: #fff;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+nav {
+  width: 80%;
+  margin: auto;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: var(--background);
+  color: var(--witeColor);
+  font-size: 16px;
+}
+
+span,
+.span {
+  color: var(--primaryColor);
+}
+
+nav ul li a {
+  color: var(--witeColor) !important;
+  font-size: 1.2em;
+}
+
+nav ul li a:hover {
+  color: var(--primaryColor) !important;
+}
+
+.dropdown-menu {
+  background: var(--darkColor);
+}
+
+.dropdown-item {
+  transition: 0.3s;
+}
+
+.dropdown-item:hover {
+  color: var(--primaryColor) !important;
+  background: var(--darkColor) !important;
+}
+
+.logo {
+  font-size: 1.8em;
+  color: #fff;
+}
+
+.logo:hover {
+  color: #fff;
+}
+
+section {
+  padding: 12% 8%;
+}
+
+.home p {
+  font-size: 1.1em;
+}
+
+.home h3 {
+  font-size: 2.2em;
+  margin-top: 0.5em;
+}
+
+.home h4 {
+  font-size: 1.5em;
+  margin-top: 0.5em;
+}
+
+.btn {
+  transition: 0.3s;
+}
+
+.btn-main {
+  border: 2px solid var(--primaryColor);
+  background-color: var(--primaryColor);
+  color: var(--witeColor);
+}
+
+.btn-main:hover {
+  color: var(--witeColor) !important;
+  background: transparent;
+}
+
+.animationEff,
+body {
+  animation-name: an1;
+  animation-duration: 2s;
+}
+
+body::after {
+  content: '';
+  width: 100%;
+  height: 100vh;
+  background-color: var(--primaryColor);
+  position: absolute;
+  bottom: 1%;
+  z-index: -1;
+  clip-path: circle(40% at right 85%);
+}
+
+.title {
+  text-align: center;
+  color: var(--primaryColor);
+  margin: 1% 0;
+}
+
+.p {
+  color: #fff;
+  line-height: 40px;
+  font-size: 1.2em;
+  text-transform: capitalize;
+}
+
+.projects .card {
+  background-color: #1a1919;
+  color: #fff !important;
+  box-shadow: 2px 2px 60px #444;
+}
+
+.bg-color {
+  background-color: var(--primaryColor) !important;
+}
+
+.services .card {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  height: 350px;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.services .card:hover {
+  border: 1px solid var(--primaryColor);
+}
+
+.services .i {
+  text-align: center;
+  font-size: 2.5em;
+  padding: 1.2em 0;
+}
+
+.services .card h5 {
+  color: var(--primaryColor);
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.services .container {
+  margin-top: 4.3em;
+}
+
+.icons a {
+  color: var(--witeColor);
+  font-size: 1.7em;
+  padding: 0 0.5em;
+  transition: 0.3s;
+}
+
+.icons a:hover {
+  color: var(--primaryColor);
+}
+
+.icons {
+  margin: 1.2em 0;
+}
+
+.contact-icons {
+  margin-top: 1.5em;
+}
+
+.contact-icons span {
+  padding-right: 1em;
+}
+
+.contact-icons p {
+  font-size: 1.2em;
+}
+
+.contact form input,
+textarea,
+.contact button {
+  display: block;
+  width: 100%;
+  margin: 1em 0;
+}
+
+.contact form input,
+textarea {
+  background-color: var(--darkColor);
+  border: 0;
+  outline: 0;
+  padding: 0.6em;
+  color: var(--witeColor);
+}
+
+.lists ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.lists ul li a {
+  text-decoration: none;
+  color: var(--witeColor);
+  padding: 0.6em;
+  transition: 0.3s;
+}
+
+.lists ul li a:hover {
+  color: var(--primaryColor);
+}
+
+footer {
+  background-color: var(--darkColor);
+}
+
+@keyframes an1 {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.serRow {
+  justify-content: space-between;
+}
+
+.error404 {
+  background-color: #171717;
+  color: #fff;
+  height: 100vh;
+}
+
+.error404 h2 {
+  font-size: 5rem !important;
+}

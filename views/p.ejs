@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("./partials/head") %>
+<body>
+  <section>
+    <% data.forEach(i => { %>
+      <div>
+        <p><%= i.name %></p>
+        <p><%= i.email %></p>
+        <p><%= i.message %></p>
+      </div>
+      <br>
+      <% }); %>
+  </section>
+</body>
+</html>

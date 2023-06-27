@@ -1,0 +1,47 @@
+@media (max-width: 720px) {
+    body{
+        width: 100%;
+    }
+    nav{
+        width: 100%;
+    }
+    body::after{
+        display: none;
+    }
+    .home p{
+        font-size: 0.9em !important;
+    }
+    .home h2{
+        font-size: 1.4em !important;
+        margin: 20px 0;
+    }
+    .home h4{
+        font-size: 1.2em !important
+    }
+    .home a , .contact a{
+        padding: 0.2em !important;
+        margin-top: 20px;
+    }
+    .about p{
+        letter-spacing: 1px;
+    }
+    .projects .card{
+        margin: 20px 0;
+    }
+    .services .card{
+        margin: 20px 0;
+        height: 400px !important;
+    }
+    .certificates a{
+        margin: 20px 0;
+    }
+    .contact h2[class="title2"]{
+        display: none;
+    }
+    footer .lists{
+       display: none;
+    }
+    footer{
+        text-align: center;
+    }
+}
